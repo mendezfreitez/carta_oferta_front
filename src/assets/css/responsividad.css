@@ -1,0 +1,28 @@
+@media (max-width:500px) {
+  .cuadroSesssion {
+    width: 100%;
+    border-radius: 0;
+    justify-content: space-between;
+  }
+
+  .navegacionBar {
+    justify-content: flex-end;
+    padding-left: 0;
+  }
+
+  .navegacionBar > .contLogoCopecRojo {
+    display: none;
+  }
+
+  .lineaVertical {
+    display: none;
+  }
+}
+
+@media (max-width:600px) {
+
+  .usuarioAdmin,
+  .cargoUsuarioAdmin {
+    max-width: 200px;
+  }
+}

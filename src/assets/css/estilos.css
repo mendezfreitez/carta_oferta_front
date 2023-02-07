@@ -1,0 +1,108 @@
+.navegacionBar {
+  background-color: #f8f9fa;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cuadroSesssion {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  background-color: blue;
+  align-items: center;
+  padding: 0 14px;
+  border-radius: 0 0 0 14px;
+}
+
+.bgAzulCopec {
+  background-color: #2C69AA;
+}
+
+.bgAzulOscuroCopec {
+  background-color: #003965 !important;
+}
+.borderAzulOscuro {
+  border-color: #003965 !important;
+}
+
+.cuadroIcono {
+  padding: 6px 12px 10px 12px;
+  border-radius: 10px;
+}
+
+.cuadroCargo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.usuarioAdmin {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cargoUsuarioAdmin {
+  font-size: 13px;
+}
+
+.lineaVertical {
+  width: 3px;
+  background-color: #FFF;
+  height: 42px;
+  margin: 0 0 0 12px;
+  border-radius: 1px;
+}
+
+.btnDropdown {
+  display: flex!important;
+  align-items: center;
+  height: 40px;
+  margin-left: 12px;
+}
+
+.border10px {
+  border-radius: 10px !important;
+  border-width: 0 !important;
+}
+
+.tresPuntos {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.contLogoCopecRojo{
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.barraLateral{
+  background-color: #F2F5F7;
+  height:calc(100vh - 60px);
+  width: 240px;
+}
+.contenedorAplicacion{
+  width: calc(100vw - 240px);
+  height: calc(100vh - 60px);
+}
+.loginLayout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.loginContainer{
+  height: 400px;
+  min-width: 300px;
+  max-width: 700px;
+  background-color: #FFF;
+  border-radius: 30px;
+  border: dashed 3px;
+}
+.sombra{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
