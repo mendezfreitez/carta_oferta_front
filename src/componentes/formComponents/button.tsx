@@ -3,7 +3,7 @@ interface props {
   funcion: () => void
 }
 
-export const Boton = ({ funcion, texto = 'hola' }: props) => {
+export const Boton = ({ funcion, texto }: props) => {
   return (
     <>
       <button

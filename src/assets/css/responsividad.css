@@ -1,4 +1,8 @@
-@media (max-width:500px) {
+@media (max-width:600px) {
+
+  .lineaVertical {
+    display: none;
+  }
   .cuadroSesssion {
     width: 100%;
     border-radius: 0;
@@ -10,19 +14,48 @@
     padding-left: 0;
   }
 
-  .navegacionBar > .contLogoCopecRojo {
+  .navegacionBar>.contLogoCopecRojo {
     display: none;
   }
-
-  .lineaVertical {
-    display: none;
-  }
-}
-
-@media (max-width:600px) {
 
   .usuarioAdmin,
   .cargoUsuarioAdmin {
     max-width: 200px;
+  }
+
+  .copecLogoBlanco {
+    display: none;
+  }
+}
+
+@media(max-width:1200px) {
+
+  .boxFooter span,
+  .boxFooter label {
+    font-size: 12px !important;
+    line-height: 14px;
+  }
+
+  .boxFooter {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+    height: 78px;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  .lineaVerticalFooter {
+    display: none;
+  }
+}
+
+@media (max-width:700px) {
+  .loginLayout {
+    height: 100vh;
   }
 }

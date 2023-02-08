@@ -5,7 +5,7 @@ export const RutasLogin = () => {
   return (
     <Routes>
       <Route path="*" element={<Navigate to="/login" />} />
-      <Route path="/" element={<Login />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
   )
 }

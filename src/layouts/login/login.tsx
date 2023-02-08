@@ -1,34 +1,31 @@
-import { LogoCopecRojoSVG } from "../../componentes/iconos/iconos"
 import { InputText } from "../../componentes/formComponents/inputText"
-import { useState } from "react"
+import { LogoCopecRojoSVG } from "../../componentes/iconos/iconos"
 import { Boton } from "../../componentes/formComponents/button"
+import { useLogin } from "./tsLogin"
 
 const LoginForm = () => {
-  const [dato, setDato] = useState<any>({
-    usuario: '',
-    contrasenia: ''
-  });
+  const { formik, setValor } = useLogin()
 
-  const alerta = () => {
-    alert(JSON.stringify(dato))
+  const alerta = async () => {
+    console.log(formik)
   }
 
   return (
     <form className="d-flex flex-column justify-content-between formLogin">
       <InputText
-        funcion={(txt) => { setDato({ ...dato, usuario: txt.trim() }) }}
-        valor={dato.usuario}
+        funcion={(txt) => { setValor('usuario', txt) }}
+        valor={formik.values.usuario}
         place='Usuario'
         tipo='text'
       />
       <InputText
-        funcion={(txt) => { setDato({ ...dato, contrasenia: txt.trim() }) }}
-        valor={dato.contrasenia}
+        funcion={(txt) => { setValor('contrasenia', txt) }}
+        valor={formik.values.contrasenia}
         place='Contraseña'
         tipo='password'
       />
       <Boton
-        texto='Iniciar Sesion'
+        texto='Ingresar'
         funcion={alerta}
       />
     </form>
@@ -40,8 +37,9 @@ export const Login = () => {
   return (
     <div className="loginLayout mx-5">
       <div className="loginContainer borderAzulOscuro sombra">
-        <div className="d-flex justify-content-center pt-5 mt-3">
+        <div className="pt-5 mt-3 headerContLoginForm">
           <LogoCopecRojoSVG />
+          <h3 className="txtIniciarSesion">Iniciar sesión</h3>
         </div>
         <LoginForm />
       </div>
