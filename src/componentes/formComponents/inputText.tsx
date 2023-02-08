@@ -1,20 +1,21 @@
-import { FC, ReactElement } from "react"
-
-interface inputProps {
-  ejecutar: (e: string) => void,
+interface props {
+  funcion: (e: string) => void,
   place: string,
-  data: string
+  valor: string,
+  tipo: string,
 }
 
-export const InputText = ({ ejecutar, place, data }: inputProps) => {
-  // export const InputText = (ejecutar: any, place: string, data: string) => {
+export const InputText = ({ funcion, place, valor, tipo = 'text' }: props) => {
   return (
-    <>
+    <div className="d-flex flex-column">
+      <label htmlFor="" className="ms-2">{place}</label>
       <input
-        onKeyUp={() => { ejecutar(EventTarget.toString()) }}
-        placeholder={place}
-        value={data}
+        className="input inputText"
+        onChange={(e) => { funcion(e.target.value) }}
+        type={tipo}
+        // placeholder={place}
+        value={valor}
       />
-    </>
+    </div>
   )
 }

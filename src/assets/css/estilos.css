@@ -23,8 +23,13 @@
 .bgAzulOscuroCopec {
   background-color: #003965 !important;
 }
+
 .borderAzulOscuro {
   border-color: #003965 !important;
+}
+
+.txtAzulOscuro {
+  color: #003965 !important;
 }
 
 .cuadroIcono {
@@ -57,7 +62,7 @@
 }
 
 .btnDropdown {
-  display: flex!important;
+  display: flex !important;
   align-items: center;
   height: 40px;
   margin-left: 12px;
@@ -73,36 +78,75 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.contLogoCopecRojo{
+
+.contLogoCopecRojo {
   width: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-.barraLateral{
+
+.barraLateral {
   background-color: #F2F5F7;
-  height:calc(100vh - 60px);
+  height: calc(100vh - 60px);
   width: 240px;
 }
-.contenedorAplicacion{
+
+.contenedorAplicacion {
   width: calc(100vw - 240px);
   height: calc(100vh - 60px);
 }
-.loginLayout{
+
+.loginLayout {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
-.loginContainer{
-  height: 400px;
-  min-width: 300px;
-  max-width: 700px;
+
+.loginContainer {
+  height: 500px;
+  min-width: 330px;
+  width: 430px;
   background-color: #FFF;
   border-radius: 30px;
   border: dashed 3px;
 }
-.sombra{
+
+.sombra {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.inputText {
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 15px;
+  background-color: #FFF;
+  color: #FFF;
+  width: auto;
+  border: solid 2px;
+  color: #003965 !important;
+  border-color: #003965 !important;
+  outline-width: 0;
+  font-weight: 500;
+}
+
+.formLogin {
+  height: 220px;
+  margin-top: 50px;
+  padding: 0 60px;
+}
+
+.inputText:focus {
+  background-color: #2c69aa10;
+}
+.btnCopec{
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+  height: 40px;
+  width: 200px;
+  align-self: center;
 }
