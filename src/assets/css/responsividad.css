@@ -1,8 +1,12 @@
 @media (max-width:600px) {
+  .formLogin {
+    padding: 0 30px;
+  }
 
   .lineaVertical {
     display: none;
   }
+
   .cuadroSesssion {
     width: 100%;
     border-radius: 0;

@@ -7,10 +7,10 @@ interface login {
   contrasenia: string,
 }
 
-export const loginSchema = Yup.object().shape({
+const loginSchema = Yup.object().shape({
   usuario: Yup
     .string()
-    .email('Ingrese un correo válido')
+    .email('Correo no válido')
     .required('falta usuariuo'),
   contrasenia: Yup
     .string()
@@ -18,7 +18,7 @@ export const loginSchema = Yup.object().shape({
 });
 
 export const useLogin = () => {
-  const [objLogin, setObjLogin] = useState<login>({
+  const [objLogin, setObjLogin] = useState({
     usuario: '',
     contrasenia: ''
   });
@@ -26,7 +26,9 @@ export const useLogin = () => {
   const formik = useFormik<login>({
     initialValues: objLogin,
     validationSchema: loginSchema,
-    onSubmit: () => { }
+    onSubmit: () => {
+      console.log(formik)
+    }
   });
 
   const setValor = (key: string, txt: string) => {
