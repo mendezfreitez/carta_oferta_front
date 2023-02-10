@@ -1,3 +1,17 @@
+html::-webkit-scrollbar-track {
+  box-shadow: rgb(255, 255, 255);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #003965;
+  outline: 0px;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+  background-color: #CCD7E0 !important;
+}
+
 .navegacionBar {
   background-color: #f8f9fa;
   height: 60px;
@@ -92,11 +106,14 @@
   background-color: #F2F5F7;
   height: calc(100vh - 60px);
   width: 240px;
+  margin-left: 0px !important;
+  transition: .6s all;
 }
 
 .contenedorAplicacion {
   width: calc(100vw - 240px);
   height: calc(100vh - 60px);
+  background-color: #0bbdbd94;
 }
 
 .loginLayout {
@@ -184,7 +201,8 @@
 .txtIniciarSesion {
   font-weight: 700;
 }
-.txtIniciarSesion{
+
+.txtIniciarSesion {
   font-size: 28px;
 }
 
@@ -198,4 +216,18 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+#btnSideBarOpen {
+  border-radius: 0 0 12px 0 !important;
+  height: 56px;
+  width: 30px;
+}
+
+.barraVisible {
+  margin-left: 0 !important;
+}
+
+.barraNoVisible {
+  margin-left: -240px !important;
 }

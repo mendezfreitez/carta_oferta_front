@@ -32,6 +32,12 @@
   }
 }
 
+@media(max-width:1000px) {
+  .contenedorAplicacion {
+    width: calc(100vw);
+  }
+}
+
 @media(max-width:1200px) {
 
   .boxFooter span,
