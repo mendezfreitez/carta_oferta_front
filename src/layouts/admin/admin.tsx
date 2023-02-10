@@ -1,5 +1,5 @@
 import { BarraNavegacion } from "../../componentes/barraNavegacion/navegacionAdmin"
-import { BarraLateral } from "../../componentes/barraLateral/barraLateral"
+import { BarraLateral } from "../../componentes/baraLateral/barraLateral"
 
 export const AdminLayout = () => {
   return (
