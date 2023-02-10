@@ -111,9 +111,7 @@ html::-webkit-scrollbar {
 }
 
 .contenedorAplicacion {
-  width: calc(100vw - 240px);
   height: calc(100vh - 60px);
-  background-color: #0bbdbd94;
 }
 
 .loginLayout {
@@ -245,6 +243,8 @@ html::-webkit-scrollbar {
   border-radius: 0 0 12px 0 !important;
   height: 56px;
   width: 30px;
+  transition: .6s all;
+  outline-width: 0px;
 }
 
 .barraVisible {
@@ -253,4 +253,18 @@ html::-webkit-scrollbar {
 
 .barraNoVisible {
   margin-left: -240px !important;
+}
+
+.btnSobresalido {
+  left: 50px;
+}
+
+.btnNoSobresalido {
+  left: 26px;
+}
+.contAdminComprimido{
+  width: calc(100vw - 240px);
+}
+.contenedorAdminDesComprimido{
+  width: calc(100vw);
 }
