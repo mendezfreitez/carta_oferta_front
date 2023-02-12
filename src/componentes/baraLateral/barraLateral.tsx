@@ -1,5 +1,6 @@
-import { useBarraLateral } from "./tsBarraLateral"
 import { listaSidebarAdmin } from "./tsBarraLateral"
+import { IconoItemBarraSVG } from "../iconos/iconos"
+import { useBarraLateral } from "./tsBarraLateral"
 import { Link } from "react-router-dom"
 import { useEffect } from "react"
 
@@ -8,8 +9,11 @@ const ListaSidebar = () => {
     <ul className="listaSideBarAdmin">
       {listaSidebarAdmin.map((el) => {
         return (
-          <li className="itemListaSidebarAdmin">
-            <Link className="txtAzulOscuro" to={el.ruta}>{el.nombre}</Link>
+          <li key={el.ruta} className="itemListaSidebarAdmin">
+            <Link className="txtAzulOscuro itemLista" to={el.ruta}>
+              <IconoItemBarraSVG icono={el.icono} />
+              {el.nombre}
+            </Link>
           </li>
         )
       })
@@ -22,7 +26,7 @@ interface props {
   ejecutar: (arg: boolean) => void
 }
 
-export const BarraLateral = ({ejecutar}: props) => {
+export const BarraLateral = ({ ejecutar }: props) => {
   const { toogleBarraLateral, visibleBarra } = useBarraLateral()
 
   useEffect(() => {
@@ -32,20 +36,15 @@ export const BarraLateral = ({ejecutar}: props) => {
   return (
     <div className="d-flex">
       <aside className={`barraLateral ${!visibleBarra ? 'barraNoVisible' : 'barraVisible'}`}>
-        <div className='d-blobk justify-content-center bgAzulOscuroCopec'>
-          <p className='text-white text-center'>
-            <span className="inline-block">
-              Nombre plataforma
-            </span>
-            <button
-              type="button"
-              id="btnSideBarOpen"
-              className={`bgAzulOscuroCopec position-relative ${!visibleBarra ? 'btnSobresalido' : 'btnNoSobresalido'}`}
-              onClick={toogleBarraLateral}
-            >
-
-            </button>
-          </p>
+        <div className='d-flex align-items-center text-white justify-content-center bgAzulOscuroCopec'>
+          Nombre plataforma
+          <button
+            type="button"
+            id="btnSideBarOpen"
+            className={`bgAzulOscuroCopec position-relative ${!visibleBarra ? 'btnSobresalido' : 'btnNoSobresalido'}`}
+            onClick={toogleBarraLateral}
+          >
+          </button>
         </div>
         <ListaSidebar />
       </aside>

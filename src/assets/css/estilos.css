@@ -222,6 +222,7 @@ html::-webkit-scrollbar {
   flex-direction: column;
   row-gap: 10px;
   margin-top: 30px;
+  padding-left: 18px;
 }
 
 .listaSideBarAdmin a {
@@ -245,6 +246,10 @@ html::-webkit-scrollbar {
   width: 30px;
   transition: .6s all;
   outline-width: 0px;
+}
+
+#btnSideBarOpen:focus {
+  border-width: 0;
 }
 
 .barraVisible {
