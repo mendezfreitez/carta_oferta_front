@@ -1,9 +1,9 @@
-import { LogoCopecBlancoSVG } from "../iconos/iconos"
+import { LogoBlancoSVG } from "../iconos/iconos"
 
 export const Footer = () => {
   return (
-    <div className="footerContainer bgAzulOscuroCopec text-white">
-      <LogoCopecBlancoSVG />
+    <div className="footerContainer bgAzulOscuro text-white">
+      <LogoBlancoSVG />
       <div className="lineaVerticalFooter"></div>
       <div className="boxFooter">
         <div className="contFooter">

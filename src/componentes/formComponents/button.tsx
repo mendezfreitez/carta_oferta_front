@@ -8,7 +8,7 @@ export const Boton = ({ funcion, texto }: props) => {
     <>
       <button
         type="button"
-        className="bgAzulOscuroCopec text-white btnCopec mt-3"
+        className="bgAzulOscuro text-white btnNormal mt-3"
         onClick={funcion}
       >
         {texto}

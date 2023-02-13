@@ -1,5 +1,5 @@
 import { InputText } from "../../componentes/formComponents/inputText"
-import { LogoCopecRojoSVG } from "../../componentes/iconos/iconos"
+import { LogoRojoSVG } from "../../componentes/iconos/iconos"
 import { Boton } from "../../componentes/formComponents/button"
 import { useLogin } from "./tsLogin"
 
@@ -36,7 +36,7 @@ export const Login = () => {
     <div className="loginLayout mx-5">
       <div className="loginContainer borderAzulOscuro sombra">
         <div className="pt-5 mt-3 headerContLoginForm">
-          <LogoCopecRojoSVG />
+          <LogoRojoSVG />
           <h3 className="txtIniciarSesion">Iniciar sesión</h3>
         </div>
         <LoginForm />

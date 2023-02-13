@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { LogoCopecRojoSVG, NotificacionesSVG, TresPuntosSVG } from "../iconos/iconos"
+import { LogoRojoSVG, NotificacionesSVG, TresPuntosSVG } from "../iconos/iconos"
 
 interface usuario {
   nombre: String,
@@ -9,7 +9,7 @@ interface usuario {
 const MenuSession = () => {
   return (
     <div className="dropdown">
-      <button title="" className="btn btn-secondary btnDropdown bgAzulOscuroCopec dropdown-toggle border10px" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <button title="" className="btn btn-secondary btnDropdown bgAzulOscuro dropdown-toggle border10px" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
         <TresPuntosSVG />
       </button>
       <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -28,8 +28,8 @@ const RecuadroSession = () => {
   })
 
   return (
-    <div className="cuadroSesssion bgAzulCopec">
-      <div className="cuadroIcono bgAzulOscuroCopec">
+    <div className="cuadroSesssion bgAzul">
+      <div className="cuadroIcono bgAzulOscuro">
         <NotificacionesSVG />
       </div>
       <div className="d-flex">
@@ -47,8 +47,8 @@ const RecuadroSession = () => {
 export const BarraNavegacion = () => {
   return (
     <div className="navegacionBar">
-      <div className="contLogoCopecRojo">
-        <LogoCopecRojoSVG />
+      <div className="contLogoRojo">
+        <LogoRojoSVG />
       </div>
       <RecuadroSession />
     </div>

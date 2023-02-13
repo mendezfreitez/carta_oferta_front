@@ -1,6 +1,6 @@
-export const LogoCopecRojoSVG = () => {
+export const LogoRojoSVG = () => {
   return (
-    <svg width="114" height="31" viewBox="0 0 144 31" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '170px' }} className="copecLogoRojo">
+    <svg width="114" height="31" viewBox="0 0 144 31" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '170px' }} className="logoRojo">
       <path d={'M140.849 26.5477H141.654C141.989 26.5477 142.391 26.6147 142.391 27.1511C142.391 27.6874 141.989 27.7544 141.654 27.7544H140.849V26.5477ZM142.123 27.9555C142.458' +
         ' 27.8214 142.726 27.4862 142.726 27.084C142.726 26.4807 142.324 26.1455 141.654 26.1455H140.581C140.514 26.1455 140.514 26.2125 140.514 26.2125V29.0952C140.514 29.1622 140.581' +
         ' 29.1622 140.581 29.1622H140.782C140.849 29.1622 140.849 29.0952 140.849 29.0952V28.0226H141.788L142.257 29.0952L142.324 29.1622H142.592C142.659 29.1622 142.659 29.0952 142.659' +
@@ -55,9 +55,9 @@ export const TresPuntosSVG = () => {
   )
 }
 
-export const LogoCopecBlancoSVG = () => {
+export const LogoBlancoSVG = () => {
   return (
-    <svg width="133" height="28" viewBox="0 0 133 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="copecLogoBlanco">
+    <svg width="133" height="28" viewBox="0 0 133 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="logoBlanco">
       <g>
         <path
           d={'M129.612 23.9785H130.35C130.657 23.9785 131.025 24.039 131.025 24.5235C131.025 25.0079 130.657 25.0684 130.35 25.0684H129.612V23.9785ZM130.78 25.2501C131.087 25.1289 131.332 24.8262' +
@@ -100,6 +100,22 @@ export const LogoCopecBlancoSVG = () => {
             ' 84.2595 20.4059 84.2595 19.3159V17.5599V16.5911H97.4106C100.299 16.5911 102.634 14.2296 102.634 11.3231Z'} fill="white" />
       </g>
     </svg>
+  )
+}
+
+interface icono {
+  visible: Boolean
+}
+export const AbrirCerrarSidebar = ({ visible }: icono) => {
+
+  const traerBg = () => visible ? '' : 'bgAzulOscuro'
+
+
+  return (
+    <div className='d-flex flex-column abrirCerrarSidebar'>
+      <div className={`caja1 ${traerBg()} ${!visible ? 'm' : ''}d30`}></div>
+      <div className={`caja2 ${traerBg()} ${visible ? 'm' : ''}d30`}></div>
+    </div>
   )
 }
 

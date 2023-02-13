@@ -30,11 +30,11 @@ html::-webkit-scrollbar {
   border-radius: 0 0 0 14px;
 }
 
-.bgAzulCopec {
+.bgAzul {
   background-color: #2C69AA;
 }
 
-.bgAzulOscuroCopec {
+.bgAzulOscuro {
   background-color: #003965 !important;
 }
 
@@ -49,6 +49,7 @@ html::-webkit-scrollbar {
 .cuadroIcono {
   padding: 6px 12px 10px 12px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .cuadroCargo {
@@ -94,7 +95,7 @@ html::-webkit-scrollbar {
   overflow: hidden;
 }
 
-.contLogoCopecRojo {
+.contLogoRojo {
   width: 240px;
   display: flex;
   align-items: center;
@@ -110,8 +111,11 @@ html::-webkit-scrollbar {
   transition: .6s all;
 }
 
-.contenedorAplicacion {
+.contApp {
+  display: flex;
+  flex-direction: column;
   height: calc(100vh - 60px);
+  overflow-y: scroll;
 }
 
 .loginLayout {
@@ -162,7 +166,7 @@ html::-webkit-scrollbar {
   background-color: #2c69aa10;
 }
 
-.btnCopec {
+.btnNormal {
   justify-content: center;
   align-items: center;
   border-radius: 24px;
@@ -241,14 +245,14 @@ html::-webkit-scrollbar {
 }
 
 #btnSideBarOpen {
-  border-radius: 0 0 12px 0 !important;
+  border-radius: 0 !important;
+  background-color: transparent!important;
   height: 56px;
   width: 30px;
   transition: .6s all;
   outline-width: 0px;
-}
-
-#btnSideBarOpen:focus {
+  display: flex;
+  justify-content: flex-end;
   border-width: 0;
 }
 
@@ -267,9 +271,58 @@ html::-webkit-scrollbar {
 .btnNoSobresalido {
   left: 26px;
 }
-.contAdminComprimido{
+
+.contAdminComprimido {
   width: calc(100vw - 240px);
 }
-.contenedorAdminDesComprimido{
+
+.contenedorAdminDesComprimido {
   width: calc(100vw);
+}
+
+.abrirCerrarSidebar {
+  height: 44px;
+  width: 20px;
+  justify-content: end;
+  display: flex;
+  align-items: center;
+}
+
+.caja1 {
+  margin-bottom: -3px;
+}
+
+.caja2 {
+  margin-top: -3px;
+}
+
+.caja1,
+.caja2 {
+  border-radius: 2px;
+  height: 20px;
+  background-color: #FFF;
+  width: 4px;
+  transition: 1.5s all;
+}
+
+.md30 {
+  rotate: -30deg;
+}
+
+.d30 {
+  rotate: 30deg;
+}
+.headerView{
+  height: 47px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 4px 24px 10px 24px;
+  padding: 0 10px;
+}
+.bodyView{
+  background-color: aquamarine;
+  width: auto;
+  padding: 20px;
 }

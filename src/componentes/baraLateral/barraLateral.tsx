@@ -1,3 +1,4 @@
+import { AbrirCerrarSidebar } from "../iconos/iconos"
 import { listaSidebarAdmin } from "./tsBarraLateral"
 import { IconoItemBarraSVG } from "../iconos/iconos"
 import { useBarraLateral } from "./tsBarraLateral"
@@ -36,14 +37,15 @@ export const BarraLateral = ({ ejecutar }: props) => {
   return (
     <div className="d-flex">
       <aside className={`barraLateral ${!visibleBarra ? 'barraNoVisible' : 'barraVisible'}`}>
-        <div className='d-flex align-items-center text-white justify-content-center bgAzulOscuroCopec'>
+        <div className='d-flex align-items-center text-white justify-content-center bgAzulOscuro'>
           Nombre plataforma
           <button
             type="button"
             id="btnSideBarOpen"
-            className={`bgAzulOscuroCopec position-relative ${!visibleBarra ? 'btnSobresalido' : 'btnNoSobresalido'}`}
+            className={`p-0 bgAzulOscuro position-relative ${!visibleBarra ? 'btnSobresalido' : 'btnNoSobresalido'}`}
             onClick={toogleBarraLateral}
           >
+            <AbrirCerrarSidebar visible={visibleBarra} />
           </button>
         </div>
         <ListaSidebar />

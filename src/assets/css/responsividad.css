@@ -18,7 +18,7 @@
     padding-left: 0;
   }
 
-  .navegacionBar>.contLogoCopecRojo {
+  .navegacionBar>.contLogoRojo {
     display: none;
   }
 
@@ -27,13 +27,19 @@
     max-width: 200px;
   }
 
-  .copecLogoBlanco {
+  .logoBlanco {
     display: none;
   }
 }
 
+@media (max-width:700px) {
+  .loginLayout {
+    height: 100vh;
+  }
+}
+
 @media(max-width:1000px) {
-  .contenedorAplicacion {
+  .contApp {
     width: calc(100vw);
   }
 }
@@ -62,10 +68,12 @@
   .lineaVerticalFooter {
     display: none;
   }
-}
 
-@media (max-width:700px) {
-  .loginLayout {
-    height: 100vh;
+  .barraLateral {
+    position: absolute;
+  }
+
+  .contAdminComprimido {
+    width: 100vw;
   }
 }
